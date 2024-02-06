@@ -3,6 +3,7 @@ const express = require('express')
 const hbs = require('hbs')
 const geocode = require('./utils/geocoding')
 const weatherstack = require('./utils/weather')
+const port = process.env.PORT
 
 // To initalize Express
 const app = express() // Instance of an application
@@ -90,6 +91,6 @@ app.get('*',(req, res) => {
     })
 })
 
-app.listen(3000, ()=>{
-    console.log('Server is up now');
+app.listen(port, ()=>{
+    console.log('Server is up now on port: '+port);
 })

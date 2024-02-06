@@ -5,18 +5,20 @@
 body{
     margin: 0 auto;
     max-width: 700px;
-    height: 100vh;
+    min-height: 100vh;
     flex-direction: column;
     display: flex;
-    padding: 5px 16px;
-    flex-grow: 1;
+    padding: 0 16px;
 }
 
 header{
     background-color: whitesmoke;
-}
-.main-content{
     margin-bottom: 50px;
+    margin-top: 16px;
+}
+
+.main-content{
+    flex-grow: 1;
 }
 
 header a{ 
