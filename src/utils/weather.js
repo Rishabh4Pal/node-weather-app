@@ -11,7 +11,7 @@ const weatherstack = (longitude, latitude, callback)=>{
         } else if (response.body.success === false) {
             callback('Unable to fetch. Try again.',undefined)
         } else {
-            callback(undefined, response.body.data[0].weather.description + ' It is currently ' + response.body.data[0].temp + ' degress out. There is a ' +  + '% chance of rain.')
+            callback(undefined, response.body.data[0].weather.description + ' It is currently ' + response.body.data[0].temp + ' degress out. There is a ' + response.body.data[0].precip  + '% chance of rain.')
         }
     })
 }
